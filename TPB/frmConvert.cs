@@ -12,7 +12,7 @@ namespace Transparent_Picture_Background
         public frmConvert()
         {
             InitializeComponent();
-            this.Font = new Font("B Nazanin", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            this.Font = new Font("Arial", 8F, FontStyle.Regular, GraphicsUnit.Point);
         }
 
         private void btnSourceBrowse_Click(object sender, EventArgs e)
@@ -24,7 +24,7 @@ namespace Transparent_Picture_Background
             if (openFileDialog.ShowDialog() == DialogResult.OK)
                 txtSource.Text = openFileDialog.SelectedPath;
             else
-                MessageBox.Show("آدرس وارد شده صحیح نیست.");
+                MessageBox.Show("The address entered is not correct.");
         }
 
         public void DrawTransparent(List<string> picPath)
@@ -60,10 +60,10 @@ namespace Transparent_Picture_Background
             {
                 files = Directory.GetFiles(txtSource.Text, "*.jpg", SearchOption.AllDirectories);
                 if (files.Length != 0)
-                    MessageBox.Show("هیچ فایلی یافت نشد.");
+                    MessageBox.Show("No files found.");
             }
             else
-                MessageBox.Show("آدرس یافت نشد.");
+                MessageBox.Show("Address not found.");
             return files;
         }
 

@@ -41,9 +41,9 @@ namespace Transparent_Picture_Background
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(15, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 18);
+            this.label1.Size = new System.Drawing.Size(44, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "انتخاب محل: ";
+            this.label1.Text = "Brows:";
             // 
             // txtSource
             // 
@@ -60,7 +60,7 @@ namespace Transparent_Picture_Background
             this.btnSourceBrowse.Name = "btnSourceBrowse";
             this.btnSourceBrowse.Size = new System.Drawing.Size(82, 28);
             this.btnSourceBrowse.TabIndex = 3;
-            this.btnSourceBrowse.Text = "بارگذاری";
+            this.btnSourceBrowse.Text = "Upload";
             this.btnSourceBrowse.UseVisualStyleBackColor = true;
             this.btnSourceBrowse.Click += new System.EventHandler(this.btnSourceBrowse_Click);
             // 
@@ -71,7 +71,7 @@ namespace Transparent_Picture_Background
             this.btnConvert.Name = "btnConvert";
             this.btnConvert.Size = new System.Drawing.Size(82, 27);
             this.btnConvert.TabIndex = 6;
-            this.btnConvert.Text = "تبدیل";
+            this.btnConvert.Text = "Convert";
             this.btnConvert.UseVisualStyleBackColor = true;
             this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
             // 
@@ -87,9 +87,9 @@ namespace Transparent_Picture_Background
             this.Font = new System.Drawing.Font("B Nazanin", 9F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConvert";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.RightToLeftLayout = true;
-            this.Text = "تبدیل عکس";
+            this.Text = "Convert Picture";
             this.ResumeLayout(false);
             this.PerformLayout();
 
